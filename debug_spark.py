@@ -11,7 +11,7 @@ print('PATH contains java:', any('java' in p.lower() for p in os.environ.get('PA
 try:
     print('\nRunning `java -version`...')
     jv = subprocess.run(['java','-version'], capture_output=True, text=True)
-    # java prints version to stderr
+    
     print('java -version stdout:')
     print(jv.stdout)
     print('java -version stderr:')
