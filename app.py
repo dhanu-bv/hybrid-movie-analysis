@@ -92,7 +92,7 @@ def svg_placeholder(width=300, height=450, text='No image'):
 
 # --- Page Header ---
 st.markdown("<h1 style='text-align:center'>🎬 Hybrid Movie Analysis Dashboard</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align:center'>Precomputed Spark results + optional live TMDb enrichment.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center'>Precomputed Spark results + live TMDb enrichment.</p>", unsafe_allow_html=True)
 st.markdown("---")
 
 # --- Load Historical Data ---
