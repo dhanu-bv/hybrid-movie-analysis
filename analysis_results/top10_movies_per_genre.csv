@@ -1,0 +1,176 @@
+genre,title,rating_count,avg_rating
+Action,Fight Club (1999),218,4.272935779816514
+Action,"Dark Knight, The (2008)",149,4.238255033557047
+Action,"Princess Bride, The (1987)",142,4.232394366197183
+Action,Star Wars: Episode IV - A New Hope (1977),251,4.231075697211155
+Action,Apocalypse Now (1979),107,4.219626168224299
+Action,Star Wars: Episode V - The Empire Strikes Back (1980),211,4.2156398104265405
+Action,Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981),200,4.2075
+Action,"Matrix, The (1999)",278,4.192446043165468
+Action,North by Northwest (1959),57,4.184210526315789
+Action,City of God (Cidade de Deus) (2002),75,4.1466666666666665
+Adventure,"Princess Bride, The (1987)",142,4.232394366197183
+Adventure,Star Wars: Episode IV - A New Hope (1977),251,4.231075697211155
+Adventure,Star Wars: Episode V - The Empire Strikes Back (1980),211,4.2156398104265405
+Adventure,Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981),200,4.2075
+Adventure,North by Northwest (1959),57,4.184210526315789
+Adventure,Monty Python and the Holy Grail (1975),136,4.161764705882353
+Adventure,Spirited Away (Sen to Chihiro no kamikakushi) (2001),87,4.155172413793103
+Adventure,City of God (Cidade de Deus) (2002),75,4.1466666666666665
+Adventure,"Good, the Bad and the Ugly, The (Buono, il brutto, il cattivo, Il) (1966)",72,4.145833333333333
+Adventure,Star Wars: Episode VI - Return of the Jedi (1983),196,4.137755102040816
+Animation,Spirited Away (Sen to Chihiro no kamikakushi) (2001),87,4.155172413793103
+Animation,Toy Story 3 (2010),55,4.109090909090909
+Animation,WALL·E (2008),104,4.0576923076923075
+Animation,Wallace & Gromit: The Wrong Trousers (1993),56,4.035714285714286
+Animation,Up (2009),105,4.004761904761905
+Animation,Finding Nemo (2003),141,3.9609929078014185
+Animation,How to Train Your Dragon (2010),53,3.943396226415094
+Animation,"Lion King, The (1994)",172,3.941860465116279
+Animation,Toy Story (1995),215,3.9209302325581397
+Animation,"Monsters, Inc. (2001)",132,3.871212121212121
+Children,Toy Story 3 (2010),55,4.109090909090909
+Children,WALL·E (2008),104,4.0576923076923075
+Children,Wallace & Gromit: The Wrong Trousers (1993),56,4.035714285714286
+Children,It's a Wonderful Life (1946),58,4.0344827586206895
+Children,Up (2009),105,4.004761904761905
+Children,"Christmas Story, A (1983)",55,3.9727272727272727
+Children,Finding Nemo (2003),141,3.9609929078014185
+Children,How to Train Your Dragon (2010),53,3.943396226415094
+Children,"Lion King, The (1994)",172,3.941860465116279
+Children,Toy Story (1995),215,3.9209302325581397
+Comedy,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964),97,4.268041237113402
+Comedy,"Princess Bride, The (1987)",142,4.232394366197183
+Comedy,Pulp Fiction (1994),307,4.197068403908795
+Comedy,"Amelie (Fabuleux destin d'Amélie Poulain, Le) (2001)",120,4.183333333333334
+Comedy,Forrest Gump (1994),329,4.164133738601824
+Comedy,Monty Python and the Holy Grail (1975),136,4.161764705882353
+Comedy,Snatch (2000),93,4.155913978494624
+Comedy,Life Is Beautiful (La Vita è bella) (1997),88,4.1477272727272725
+Comedy,Fargo (1996),181,4.116022099447513
+Comedy,Toy Story 3 (2010),55,4.109090909090909
+Crime,"Shawshank Redemption, The (1994)",317,4.429022082018927
+Crime,"Godfather, The (1972)",192,4.2890625
+Crime,Fight Club (1999),218,4.272935779816514
+Crime,"Godfather: Part II, The (1974)",129,4.25968992248062
+Crime,"Departed, The (2006)",107,4.252336448598131
+Crime,Goodfellas (1990),126,4.25
+Crime,"Dark Knight, The (2008)",149,4.238255033557047
+Crime,"Usual Suspects, The (1995)",204,4.237745098039215
+Crime,American History X (1998),129,4.217054263565892
+Crime,Chinatown (1974),59,4.211864406779661
+Documentary,Bowling for Columbine (2002),58,3.7758620689655173
+Drama,"Shawshank Redemption, The (1994)",317,4.429022082018927
+Drama,"Godfather, The (1972)",192,4.2890625
+Drama,Fight Club (1999),218,4.272935779816514
+Drama,Cool Hand Luke (1967),57,4.271929824561403
+Drama,"Godfather: Part II, The (1974)",129,4.25968992248062
+Drama,"Departed, The (2006)",107,4.252336448598131
+Drama,Goodfellas (1990),126,4.25
+Drama,Casablanca (1942),100,4.24
+Drama,"Dark Knight, The (2008)",149,4.238255033557047
+Drama,Schindler's List (1993),220,4.225
+Fantasy,"Princess Bride, The (1987)",142,4.232394366197183
+Fantasy,Brazil (1985),59,4.177966101694915
+Fantasy,Monty Python and the Holy Grail (1975),136,4.161764705882353
+Fantasy,Spirited Away (Sen to Chihiro no kamikakushi) (2001),87,4.155172413793103
+Fantasy,"Lord of the Rings: The Return of the King, The (2003)",185,4.118918918918919
+Fantasy,Toy Story 3 (2010),55,4.109090909090909
+Fantasy,"Lord of the Rings: The Fellowship of the Ring, The (2001)",198,4.106060606060606
+Fantasy,Army of Darkness (1993),51,4.03921568627451
+Fantasy,It's a Wonderful Life (1946),58,4.0344827586206895
+Fantasy,"Lord of the Rings: The Two Towers, The (2002)",188,4.0212765957446805
+Film-Noir,Chinatown (1974),59,4.211864406779661
+Film-Noir,L.A. Confidential (1997),97,4.061855670103093
+Film-Noir,Sin City (2005),84,3.857142857142857
+Film-Noir,Mulholland Drive (2001),51,3.843137254901961
+Horror,"Silence of the Lambs, The (1991)",279,4.161290322580645
+Horror,"Shining, The (1980)",109,4.08256880733945
+Horror,Army of Darkness (1993),51,4.03921568627451
+Horror,Psycho (1960),83,4.036144578313253
+Horror,Shaun of the Dead (2004),77,4.0064935064935066
+Horror,Jaws (1975),91,4.0054945054945055
+Horror,28 Days Later (2002),58,3.9741379310344827
+Horror,Alien (1979),146,3.969178082191781
+Horror,Aliens (1986),126,3.9642857142857144
+Horror,"Sixth Sense, The (1999)",179,3.893854748603352
+IMAX,"Dark Knight, The (2008)",149,4.238255033557047
+IMAX,Toy Story 3 (2010),55,4.109090909090909
+IMAX,Inception (2010),143,4.066433566433567
+IMAX,"Dark Knight Rises, The (2012)",76,3.9934210526315788
+IMAX,Interstellar (2014),73,3.993150684931507
+IMAX,How to Train Your Dragon (2010),53,3.943396226415094
+IMAX,"Lion King, The (1994)",172,3.941860465116279
+IMAX,Harry Potter and the Prisoner of Azkaban (2004),93,3.913978494623656
+IMAX,Harry Potter and the Half-Blood Prince (2009),58,3.8879310344827585
+IMAX,V for Vendetta (2006),100,3.885
+Musical,"Lion King, The (1994)",172,3.941860465116279
+Musical,"Sound of Music, The (1965)",64,3.9375
+Musical,Mary Poppins (1964),71,3.887323943661972
+Musical,"Wizard of Oz, The (1939)",92,3.880434782608696
+Musical,Willy Wonka & the Chocolate Factory (1971),119,3.8739495798319328
+Musical,"South Park: Bigger, Longer and Uncut (1999)",76,3.861842105263158
+Musical,"Jungle Book, The (1967)",53,3.830188679245283
+Musical,"Blues Brothers, The (1980)",84,3.8095238095238093
+Musical,Aladdin (1992),183,3.7923497267759565
+Musical,Fantasia (1940),53,3.7830188679245285
+Mystery,Rear Window (1954),84,4.261904761904762
+Mystery,"Usual Suspects, The (1995)",204,4.237745098039215
+Mystery,Chinatown (1974),59,4.211864406779661
+Mystery,Reservoir Dogs (1992),131,4.202290076335878
+Mystery,North by Northwest (1959),57,4.184210526315789
+Mystery,Memento (2000),159,4.122641509433962
+Mystery,Inception (2010),143,4.066433566433567
+Mystery,L.A. Confidential (1997),97,4.061855670103093
+Mystery,Citizen Kane (1941),69,4.043478260869565
+Mystery,Vertigo (1958),60,4.025
+Romance,Casablanca (1942),100,4.24
+Romance,"Princess Bride, The (1987)",142,4.232394366197183
+Romance,North by Northwest (1959),57,4.184210526315789
+Romance,"Amelie (Fabuleux destin d'Amélie Poulain, Le) (2001)",120,4.183333333333334
+Romance,Forrest Gump (1994),329,4.164133738601824
+Romance,Eternal Sunshine of the Spotless Mind (2004),131,4.1603053435114505
+Romance,Life Is Beautiful (La Vita è bella) (1997),88,4.1477272727272725
+Romance,Good Will Hunting (1997),141,4.078014184397163
+Romance,"Graduate, The (1967)",79,4.063291139240507
+Romance,WALL·E (2008),104,4.0576923076923075
+Sci-Fi,Star Wars: Episode IV - A New Hope (1977),251,4.231075697211155
+Sci-Fi,Star Wars: Episode V - The Empire Strikes Back (1980),211,4.2156398104265405
+Sci-Fi,"Matrix, The (1999)",278,4.192446043165468
+Sci-Fi,Brazil (1985),59,4.177966101694915
+Sci-Fi,Eternal Sunshine of the Spotless Mind (2004),131,4.1603053435114505
+Sci-Fi,Star Wars: Episode VI - Return of the Jedi (1983),196,4.137755102040816
+Sci-Fi,Blade Runner (1982),124,4.100806451612903
+Sci-Fi,Inception (2010),143,4.066433566433567
+Sci-Fi,WALL·E (2008),104,4.0576923076923075
+Sci-Fi,Guardians of the Galaxy (2014),59,4.0508474576271185
+Thriller,Fight Club (1999),218,4.272935779816514
+Thriller,Rear Window (1954),84,4.261904761904762
+Thriller,"Departed, The (2006)",107,4.252336448598131
+Thriller,"Usual Suspects, The (1995)",204,4.237745098039215
+Thriller,Chinatown (1974),59,4.211864406779661
+Thriller,Reservoir Dogs (1992),131,4.202290076335878
+Thriller,Pulp Fiction (1994),307,4.197068403908795
+Thriller,"Matrix, The (1999)",278,4.192446043165468
+Thriller,North by Northwest (1959),57,4.184210526315789
+Thriller,"Silence of the Lambs, The (1991)",279,4.161290322580645
+War,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964),97,4.268041237113402
+War,Schindler's List (1993),220,4.225
+War,Apocalypse Now (1979),107,4.219626168224299
+War,Forrest Gump (1994),329,4.164133738601824
+War,Life Is Beautiful (La Vita è bella) (1997),88,4.1477272727272725
+War,Saving Private Ryan (1998),188,4.1462765957446805
+War,Inglourious Basterds (2009),88,4.136363636363637
+War,Full Metal Jacket (1987),102,4.098039215686274
+War,Braveheart (1995),237,4.031645569620253
+War,Platoon (1986),63,3.984126984126984
+Western,"Good, the Bad and the Ugly, The (Buono, il brutto, il cattivo, Il) (1966)",72,4.145833333333333
+Western,Django Unchained (2012),71,3.943661971830986
+Western,Butch Cassidy and the Sundance Kid (1969),62,3.943548387096774
+Western,Blazing Saddles (1974),62,3.935483870967742
+Western,Dances with Wolves (1990),164,3.8353658536585367
+Western,Tombstone (1993),65,3.8153846153846156
+Western,Desperado (1995),66,3.5606060606060606
+Western,Maverick (1994),74,3.5
+Western,Legends of the Fall (1994),68,3.3970588235294117
+Western,Back to the Future Part III (1990),88,3.3693181818181817
