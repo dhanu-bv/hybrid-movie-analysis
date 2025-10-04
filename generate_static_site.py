@@ -55,7 +55,7 @@ def slugify(text: str) -> str:
         elif c in (' ', '-', '_'):
             keep.append('-')
     s = ''.join(keep)
-    # collapse dashes
+    
     while '--' in s:
         s = s.replace('--', '-')
     return s.strip('-')[:120]
@@ -67,7 +67,7 @@ def fetch_tmdb_poster(title: str):
     """
     if not TMDB_KEY:
         return None
-    # Search
+   
     try:
         url = f'https://api.themoviedb.org/3/search/movie?api_key={TMDB_KEY}&query={quote_plus(title)}'
         r = requests.get(url, timeout=8)
@@ -75,16 +75,16 @@ def fetch_tmdb_poster(title: str):
         data = r.json()
         if not data.get('results'):
             return None
-        # Take first result
+        
         poster_path = data['results'][0].get('poster_path')
         if not poster_path:
             return None
         image_url = TMDB_IMAGE_BASE + poster_path
-        # ensure poster dir
+        
         POSTER_DIR.mkdir(parents=True, exist_ok=True)
         filename = slugify(title) + (pathlib.Path(poster_path).suffix or '.jpg')
         out_file = POSTER_DIR / filename
-        # download if not present
+        
         if not out_file.exists():
             with requests.get(image_url, stream=True, timeout=10) as ir:
                 ir.raise_for_status()
@@ -94,13 +94,13 @@ def fetch_tmdb_poster(title: str):
                             f.write(chunk)
         return out_file.relative_to(ROOT).as_posix()
     except Exception as e:
-        # silent failure -> return None
+       
         return None
 
 
 def generate_html(df: pd.DataFrame):
     genres = sorted(df['genre'].dropna().unique())
-    # nav and sections
+
     nav_items = []
     sections = []
     for genre in genres:
@@ -121,7 +121,7 @@ def generate_html(df: pd.DataFrame):
             if poster_local:
                 img_src = poster_local
             else:
-                # link to TMDb search page when clicked
+               
                 tmdb_search = f'https://www.themoviedb.org/search?query={quote_plus(title)}'
                 img_src = PLACEHOLDER_SVG
             escaped_title = html.escape(title)
