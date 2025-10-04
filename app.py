@@ -4,11 +4,11 @@ import requests
 import glob
 import os
 from textblob import TextBlob
-import html  # used to escape review text for safe HTML rendering
+import html  
 
 st.set_page_config(page_title="Hybrid Movie Analysis", layout="wide")
 
-# Local override for quick testing only. Clear before committing.
+
 LOCAL_TMDB_API_KEY = "950bfd8ed97bddbdefae65f6ac103b3c"
 
 def _get_tmdb_api_key():
@@ -90,22 +90,22 @@ def svg_placeholder(width=300, height=450, text='No image'):
     svg += "</svg>"
     return 'data:image/svg+xml;utf8,' + svg
 
-# --- Page Header ---
+
 st.markdown("<h1 style='text-align:center'>🎬 Hybrid Movie Analysis Dashboard</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align:center'>Precomputed Spark results + live TMDb enrichment.</p>", unsafe_allow_html=True)
 st.markdown("---")
 
-# --- Load Historical Data ---
+
 results_df = load_spark_results()
 if results_df is None:
     st.error("Analysis results not found. Run process_data.py and ensure analysis_results/top10_movies_per_genre.csv exists.")
     st.stop()
 
-# --- Two Column Layout ---
+
 col1, col2 = st.columns([1, 3])
 
 with col1:
-    # Card-like Filter Panel (title changed to Insights Dashboard and text forced black for visibility)
+    
     st.markdown(
         """
         <div style='padding:15px; border:1px solid #eee; border-radius:10px; background:#fafafa;'>
@@ -131,7 +131,7 @@ with col2:
         use_container_width=True
     )
 
-# --- Live TMDb Panel ---
+
 st.markdown("---")
 st.header("⚡ Live TMDb Panel")
 
@@ -162,7 +162,7 @@ if popular:
 else:
     st.info("Popular movies not available (no TMDb key or an error occurred).")
 
-# --- Live Top by Genre ---
+
 st.subheader("🎬 Top Movies by Genre (live)")
 genres_live = {
     'Action': 28, 'Adventure': 12, 'Animation': 16, 'Comedy': 35,
@@ -197,15 +197,15 @@ if selected_genre_name_live:
                     st.image(svg_placeholder(220, 220, 'No image'), use_container_width=True)
                 st.caption(f"{mv.get('title')} — ⭐ {mv.get('vote_average')}")
                 
-                # --- Reviews: use an expander so reviews show/hide cleanly ---
+               
                 with st.expander("Reviews"):
-                    # spinner while fetching (tmdb_get_reviews is cached)
+                    
                     with st.spinner("Fetching live reviews..."):
                         reviews = tmdb_get_reviews(mv.get('id'))
                     if not reviews:
                         st.write("No recent reviews found.")
                     else:
-                        # show up to 3 reviews as snippet + expandable full text
+                       
                         for r in reviews[:3]:
                             author = html.escape(r.get('author', 'unknown'))
                             content = r.get('content', '') or ''
