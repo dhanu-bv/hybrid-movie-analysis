@@ -1,4 +1,4 @@
-# process_data.py (Corrected Version)
+
 
 import traceback
 import os
@@ -24,20 +24,20 @@ def pandas_pipeline(movies_csv='ml-latest-small/movies.csv', ratings_csv='ml-lat
     movies = pd.read_csv(movies_csv)
     ratings = pd.read_csv(ratings_csv)
 
-    # explode genres column
+    
     movies['genres'] = movies['genres'].fillna('')
     movies = movies.assign(genre=movies['genres'].str.split('|'))
     movies = movies.explode('genre')
 
-    # join ratings
+    
     merged = ratings.merge(movies[['movieId', 'title', 'genre']], on='movieId', how='left')
 
-    # aggregate
+   
     agg = merged.groupby(['genre', 'title']).rating.agg(['count', 'mean']).reset_index()
     agg = agg.rename(columns={'count': 'rating_count', 'mean': 'avg_rating'})
     agg = agg[agg['rating_count'] > 50]
 
-    # ranking per genre
+   
     agg['rank'] = agg.groupby('genre')['avg_rating'].rank(method='first', ascending=False)
     top10 = agg[agg['rank'] <= 10].sort_values(['genre', 'rank'])
 
@@ -48,7 +48,7 @@ def pandas_pipeline(movies_csv='ml-latest-small/movies.csv', ratings_csv='ml-lat
 
 
 def main():
-    # If Java + pyspark are available, try using Spark; otherwise use pandas fallback.
+    
     if java_available():
         try:
             from pyspark.sql import SparkSession
@@ -85,10 +85,10 @@ def main():
 
             output_path = "analysis_results"
             print(f"Saving results to '{output_path}'...")
-            # Ensure output directory exists
+            
             os.makedirs(output_path, exist_ok=True)
 
-            # Try to write with Spark (parquet). On Windows this may fail if winutils/HADOOP_HOME is not set.
+            
             try:
                 top_10_movies_per_genre.coalesce(1) \
                     .write \
@@ -114,7 +114,7 @@ def main():
             print('Spark path failed; falling back to pandas. Error:')
             traceback.print_exc()
 
-    # If we reach here, use the pandas fallback pipeline
+    
     try:
         pandas_pipeline()
     except Exception:
