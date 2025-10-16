@@ -36,7 +36,7 @@ Hybrid Movie Analysis is designed to provide:
 - **Others:** HTML for rendering reviews safely, glob & os for file handling
 
 ---
-
+```
 ## 🗂 Project Structure
 Hybrid-Movie-Analysis/
 ├── app.py # Main Streamlit application
@@ -48,6 +48,7 @@ Hybrid-Movie-Analysis/
 ├── debug_spark_run.txt # Spark run logs
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
+```
 
 
 ## Installation
