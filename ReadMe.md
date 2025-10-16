@@ -39,15 +39,16 @@ Hybrid Movie Analysis is designed to provide:
 
 ## 🗂 Project Structure
 Hybrid-Movie-Analysis/
-├── app.py # Main Streamlit application
-├── process_data.py # Data processing script
-├── generate_static_site.py # Optional static site generation
-├── analysis_results/ # Precomputed Spark CSV/Parquet results
-├── ml-latest-small/ # Raw movie dataset files
-├── debug_spark.py # Spark debugging utilities
-├── debug_spark_run.txt # Spark run logs
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── app.py                  ─ Main Streamlit application
+├── process_data.py         ─ Data processing script
+├── generate_static_site.py ─ Optional static site generation
+├── analysis_results/       ─ Precomputed Spark CSV/Parquet results
+├── ml-latest-small/        ─ Raw movie dataset files
+├── debug_spark.py          ─ Spark debugging utilities
+├── debug_spark_run.txt     ─ Spark run logs
+├── requirements.txt        ─ Python dependencies
+└── README.md               ─ Project documentation
+
 
 ## Installation
 1. Clone the repo: `git clone https://github.com/dhanu-bv/hybrid-movie-analysis.git`
