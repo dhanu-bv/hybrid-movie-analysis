@@ -9,7 +9,6 @@ A **hybrid movie analysis platform** that combines **precomputed Spark results**
 ### 🚀 [**View the Live Demo**](https://hybrid-movie-analysis-fkzbng7lpr7ak2wxdyory5.streamlit.app/)
 
 ![Project Demo GIF](link-to-your-screenshot-or.gif)
-
 ---
 
 ## 📌 Overview
