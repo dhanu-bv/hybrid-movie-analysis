@@ -2,38 +2,87 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.30-orange)](https://streamlit.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+A **hybrid movie analysis platform** that combines **precomputed Spark results** with **live TMDb data** to provide rich, interactive insights into movies by genre, ratings, and review sentiment.
 
-A **hybrid movie analysis platform** combining **precomputed Spark results** with **live TMDb data** to provide rich insights into movies by genre, ratings, and sentiment analysis of reviews.
+### 🚀 [**View the Live Demo**](https://hybrid-movie-analysis-fkzbng7lpr7ak2wxdyory5.streamlit.app/)
+
+![Project Demo GIF](link-to-your-screenshot-or.gif)
+*(**Pro Tip:** Record a short GIF of your app in action and replace the link above. It dramatically increases engagement.)*
 
 ---
 
 ## 📌 Overview
-Hybrid Movie Analysis is designed to provide:
-- **Top 10 movies by genre** from historical Spark analysis.
-- **Live enrichment from TMDb API** including movie posters, ratings, and reviews.
-- **Sentiment analysis** of reviews using TextBlob.
-- **Interactive Streamlit dashboard** for a seamless visual experience.
+
+This dashboard solves a common challenge in data analysis: blending large-scale historical analysis with real-time data. It uses pre-processed movie rating data (computed with Apache Spark) for performance and enriches it on-the-fly with live information from the TMDb API, such as movie posters, current ratings, and reviews.
+
+The result is a fast, responsive, and data-rich application for exploring movie trends and sentiment.
 
 ---
 
 ## 🌟 Key Features
-- Display **Top Movies per Genre** with ratings and counts.
-- **Filter movies** by minimum rating.
-- **Live TMDb Popular Movies** with poster, rating, and sentiment.
-- **Live Top Movies by Genre** with up-to-date TMDb data.
-- **Review sentiment analysis**: Positive ✅, Neutral ➖, Negative ❌.
-- SVG placeholder for movies without posters.
-- Clean, responsive, and interactive dashboard UI.
+
+-   **Hybrid Data Model:** Combines static, precomputed movie analytics with live API data for a comprehensive view.
+-   **Interactive Genre Analysis:** Displays the top 10 movies for any selected genre based on historical ratings.
+-   **Live TMDb Enrichment:** Fetches and displays up-to-date movie posters, ratings, and popular movies.
+-   **Sentiment Analysis:** Performs real-time sentiment analysis on TMDb reviews, classifying them as Positive ✅, Neutral ➖, or Negative ❌ using TextBlob.
+-   **Dynamic Filtering:** Allows users to filter movies by a minimum rating threshold.
+-   **Clean & Responsive UI:** Built with Streamlit for a seamless and intuitive user experience.
 
 ---
 
-## 🛠 Technologies Used
-- **Backend:** Python, Pandas, TextBlob, Requests
-- **Frontend / Dashboard:** Streamlit
-- **Data Processing:** Apache Spark (precomputed CSV/Parquet results)
-- **APIs:** TMDb (The Movie Database)
-- **Others:** HTML for rendering reviews safely, glob & os for file handling
+## 🛠️ Architecture & Tech Stack
+
+The application follows a two-stage data pipeline:
+
+1.  **Offline Processing (Apache Spark):** The raw MovieLens dataset is processed in a Spark environment to compute historical top movies by genre. The results are saved as CSV files for fast loading.
+2.  **Online Dashboard (Streamlit):** The Streamlit app loads the precomputed data and enriches it in real-time by making calls to the TMDb API for posters, reviews, and live popularity metrics.
+
+-   **Data Processing:** Apache Spark, Pandas
+-   **Backend & Logic:** Python, TextBlob
+-   **Frontend / Dashboard:** Streamlit
+-   **APIs:** TMDb (The Movie Database)
+-   **Data Source:** [MovieLens 25M Dataset](https://grouplens.org/datasets/movielens/latest/)
+
+---
+
+## ⚙️ Getting Started
+
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+
+-   Python 3.8+
+-   Git
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/dhanu-bv/hybrid-movie-analysis.git](https://github.com/dhanu-bv/hybrid-movie-analysis.git)
+    cd hybrid-movie-analysis
+    ```
+
+2.  **Install the required dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Set up your TMDb API Key (Securely):**
+    * Create a `.streamlit` directory in your project's root folder.
+    * Inside `.streamlit`, create a file named `secrets.toml`.
+    * Add your TMDb API key to this file like so:
+        ```toml
+        # .streamlit/secrets.toml
+        TMDB_API_KEY = "your_tmdb_api_key_goes_here"
+        ```
+    * *The `app.py` is already configured to read this secret, so you don't need to paste the key into the main script.*
+
+4.  **Run the Streamlit application:**
+    ```bash
+    streamlit run app.py
+    ```
 
 ---
 ```
@@ -50,9 +99,9 @@ Hybrid-Movie-Analysis/
 └── README.md # Project documentation
 ```
 
+---
 
-## Installation
-1. Clone the repo: `git clone https://github.com/dhanu-bv/hybrid-movie-analysis.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Add your TMDb API key in `app.py`
-4. Run: `streamlit run app.py`
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
+*(**Note:** You'll need to add a `LICENSE.md` file with the MIT license text to your repo for this link to work.)*
